@@ -1,0 +1,45 @@
+# current-key-metadata.yml
+# Machine-readable state of the Echi Hearthstone OpenPGP key hierarchy.
+renewal_window_opens: "2026-11-18"
+
+primary_key:
+  fingerprint: "EFFD FF12 80E6 3B08 B5FB 5A97 4D84 6A2D C20A 7DE6"
+  created: "2022-10-30"
+  expires: "never"
+  role: "certification"
+  status: "active"
+
+signing_subkey:
+  fingerprint: "73FE 5E1B 530D 8546"
+  created: "2022-10-31"
+  expires: "2027-01-02"
+  role: "signing"
+  status: "active"
+
+encryption_subkey:
+  fingerprint: "02E4 7267 B14C A00F"
+  created: "2022-10-31"
+  expires: "2027-01-02"
+  role: "encryption"
+  status: "active"
+
+authentication_subkey:
+  fingerprint: "465D D044 90A3 F64A"
+  created: "2022-10-31"
+  expires: "2027-01-02"
+  role: "authentication"
+  status: "active"
+
+previous_signing_subkeys: []
+  # This list remains empty because no subkey rotation has occurred.
+  # Expiration has been extended on the existing subkey, not replaced.
+  # If a rotation ever occurs, move the old entry here before overwriting
+  # the signing_subkey section above. Example:
+  # - fingerprint: "73FE 5E1B 530D 8546"
+  #   status: "superseded"
+  #   replaced_on: "YYYY-MM-DD"
+  #   signatures_remain_valid: true
+
+revocation_certificate:
+  publication_status: "offline"
+  location_note: "stored on offline backup hardware, not published"

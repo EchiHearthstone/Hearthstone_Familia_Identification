@@ -1,0 +1,7 @@
+# Protect this file from ever being caught by any encryption rule
+.gitattributes  !filter  !diff
+.gitignore !filter  !diff
+
+ 
+.config/** filter=git-crypt-Hikari diff=git-crypt-Hikari
+.config/.config.txt  filter=git-crypt-Abby  diff=git-crypt-Abby

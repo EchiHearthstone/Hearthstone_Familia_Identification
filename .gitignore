@@ -1,0 +1,11 @@
+*.swp
+*.swo
+*.swx
+*~
+*.tmp
+
+Thumbs.db
+.DS_Store
+
+git-crypt-key
+*.git-crypt-key
