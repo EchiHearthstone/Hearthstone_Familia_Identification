@@ -21,7 +21,7 @@ Last updated: 2026-03-17
 My public OpenPGP key is in [`keys/openpgp-publickey.asc`](keys/openpgp-publickey.asc).
 You can import it into any standard GPG tool. Subkey fingerprints,
 expiration dates, and current key status are in
-[`keys/current-key-metadata.yml`](keys/current-key-metadata.yml).
+[`keys/current-key-metadata.yml`](keys/current_key_metadata.yml).
 
 If you want to verify something I signed, or send me something that
 only I can read, this is the key you need.
@@ -51,8 +51,14 @@ including browser-based options that require no installation.
 ## Getting in Touch
 
 If you need to reach me or request verification and we are not already
-in contact, open an issue in this repository. I will respond with a
-signed proof commit.
+in contact, open an issue in this repository. The Issues tab sits at
+the top of the page to the left, next to the Code tab just below the
+repository name. You will need a free GitHub account to leave an issue, 
+if you do not have one, creating one takes a few minutes at github.com.
+Once you are signed in, click Issues, then the green New Issue button
+in the upper right. A brief title and a short note is all that is
+needed. I will respond with a signed proof commit so the response
+itself can be verified against the key published here.
 
 If you want to communicate privately, import the key, encrypt your
 message to it, and send it my way. If you are willing to go that far,
