@@ -1,6 +1,6 @@
 
 # Hearthstone_Familia_Identification Security Protocol
-— Key Security & Revocation Policy
+- Key Security & Revocation Policy
 
 This document describes what to expect if something goes wrong with
 the key published in this repository, and what actions will be taken
@@ -24,18 +24,18 @@ revocation is published.
 Not all revocations mean the same thing, and the reason matters for
 how you interpret past and future communications.
 
-**Key rotation** is a planned and orderly transition. The current key
+Key rotation is a planned and orderly transition. The current key
 is being retired in favor of a new one. This is not an emergency.
 Past signatures made by the current key remain fully valid. A new
 key fingerprint will be published alongside the revocation notice.
 
-**Key loss** means the hardware token holding the key material is no
+Key loss means the hardware token holding the key material is no
 longer accessible. There is no evidence of compromise, but the key
 cannot be used and is being retired out of caution. Past signatures
 are presumed valid. Whether a replacement key will be issued will be
 stated in the revocation notice.
 
-**Key compromise** is the high severity scenario. There is reason to
+Key compromise is the high severity scenario. There is reason to
 believe the private key material may be in unauthorized hands. In
 this case, treat any signature from this key after the date on the
 revocation notice with skepticism regardless of what it claims. Do
@@ -73,12 +73,24 @@ treated as suspect.
 
 ---
 
+## On Communications Claiming to Be Mine
+
+If you receive any communication stating to be from me and you are
+unable to obtain a verified signature from this key, take it with
+a bucket of salt. Regardless of the platform, regardless of the
+context, if it cannot be verified, do not trust it. If you need
+verification and are in contact with me, I can provide a signed
+proof on request. If something feels wrong and you cannot reach
+me directly, open an issue here.
+
+---
+
 ## If You Find Something That Does Not Add Up
 
 If you come across a message, a file, or anything else claiming to
-be from this identity and something feels wrong — the fingerprint
+be from this identity and something feels wrong, the fingerprint
 does not match what is published here, the signature does not
-verify, or it simply does not seem right — and you have no existing
+verify, or it simply does not seem right, and you have no existing
 way to reach me directly, open an issue in this repository.
 
 This is the right path for concerns that come up outside of an
